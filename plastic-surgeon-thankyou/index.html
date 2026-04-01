@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Medstar Media</title>
+  <style>
+    /* Critical CSS - inlined for instant render */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 60px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 span { color: #03A6E7; }
+
+    .hero p {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: rgba(255,255,255,0.8);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* CHECKMARK ICON */
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 32px;
+      background: rgba(46, 204, 113, 0.15);
+      border: 3px solid #2ecc71;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      color: #2ecc71;
+    }
+
+    /* STEPS SECTION */
+    .steps {
+      padding: 60px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .steps h2 {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #1a1a1a;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-card {
+      padding: 32px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #03A6E7;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .step-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .step-card p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* TRUST SECTION */
+    .trust {
+      padding: 60px 20px;
+      background: #f8f9fa;
+      text-align: center;
+    }
+
+    .trust h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 28px;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .badge svg {
+      width: 18px;
+      height: 18px;
+      color: #2ecc71;
+      flex-shrink: 0;
+    }
+
+    /* CTA BUTTON */
+    .cta-btn {
+      display: inline-block;
+      background: #03A6E7;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 15px rgba(3,166,231,0.4);
+      margin-top: 24px;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(3,166,231,0.5);
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero { padding: 60px 16px 50px; }
+      .steps { padding: 40px 16px; }
+      .steps-grid { gap: 24px; }
+      .step-card { padding: 24px 16px; }
+      .trust { padding: 40px 16px; }
+      .trust-badges { gap: 16px; }
+    }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="checkmark">&#10003;</div>
+    <h1>You're In!</h1>
+    <p>We'll Be In Touch Shortly</p>
+    <p style="font-size: 16px; margin-top: 16px; color: rgba(255,255,255,0.7);">One of our growth specialists will reach out within 24 hours to confirm your strategy call. In the meantime, check your email for next steps.</p>
+  </section>
+
+  <!-- WHAT HAPPENS NEXT -->
+  <section class="steps">
+    <h2>What Happens Next?</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>We Review Your Practice</h3>
+        <p>Our team analyzes your current marketing and identifies the biggest growth opportunities.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Strategy Call</h3>
+        <p>We walk you through a custom growth plan tailored to your practice.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Launch & Scale</h3>
+        <p>We implement proven systems that deliver predictable patient flow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <h3>Why Practices Trust Medstar</h3>
+    <div class="trust-badges">
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        15X Average ROI
+      </div>
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        60M+ Revenue Generated
+      </div>
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        Dedicated Support
+      </div>
+    </div>
+  </section>
+
+  <!-- Facebook Pixel - commented out, ready to activate -->
+  <!--
+  <script>
+    // Facebook Pixel - fires Schedule event on page load
+    // This is the CAPI backup - primary tracking should be server-side
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '363270409993855');
+    fbq('track', 'PageView');
+    fbq('track', 'Schedule');
+  </script>
+  -->
+
+</body>
+</html>
